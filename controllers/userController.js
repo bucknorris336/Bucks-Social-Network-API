@@ -50,14 +50,10 @@ module.exports = {
   // add friend to friend list
   async addFriend(req, res) {
     try {
-      const dbUserData = await User.findOneAndUpdate(
-        { _id: req.params.userId },
-        { $addToSet: { friends: req.params.friendId } },
-        { new: true }
-      );
+      const dbUserData = await User.findOneAndUpdate({ _id: req.params.userId }, { $addToSet: { friends: req.params.friendId } }, { new: true });
 
       if (!dbUserData) {
-        return res.status(404).json({ message: "No user with this id!" });
+        return res.status(404).json({ message: 'No user with this id!' });
       }
 
       res.json(dbUserData);
@@ -69,14 +65,10 @@ module.exports = {
   // remove friend from friend list
   async removeFriend(req, res) {
     try {
-      const dbUserData = await User.findOneAndUpdate(
-        { _id: req.params.userId },
-        { $pull: { friends: req.params.friendId } },
-        { new: true }
-      );
+      const dbUserData = await User.findOneAndUpdate({ _id: req.params.userId }, { $pull: { friends: req.params.friendId } }, { new: true });
 
       if (!dbUserData) {
-        return res.status(404).json({ message: "No user with this id!" });
+        return res.status(404).json({ message: 'No user with this id!' });
       }
 
       res.json(dbUserData);
