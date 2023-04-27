@@ -52,9 +52,10 @@ To run this project, you will need to add the following environment variables to
 ---
 
 ## Demo
+
 This video displays all api routes being tested for functionality in Insomnia.
 
-![Demo video](./assets/screencapture-localhost-3001-2023-04-21-20_26_06.png)
+![Demo video](https://drive.google.com/file/d/1ua1-QQOKdArwzKH8qU-xBLDiQIHbmYY1/view?usp=sharing)
 
 ---
 
