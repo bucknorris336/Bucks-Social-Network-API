@@ -12,6 +12,8 @@
 
 ## Description
 
+The purpose of this project was to create an API for a social network web application where users can share their thoughts, react to other's thoughts, and create a friend list.
+Express.js was used for routing, a MongoDB database was used to store User and Thought data, and Mongoose was used for object data modeling (ODM).
 
 ---
 
@@ -50,8 +52,9 @@ To run this project, you will need to add the following environment variables to
 ---
 
 ## Demo
+This video displays all api routes being tested for functionality in Insomnia.
 
-![tech-blog-photo](./assets/screencapture-localhost-3001-2023-04-21-20_26_06.png)
+![Demo video](./assets/screencapture-localhost-3001-2023-04-21-20_26_06.png)
 
 ---
 
