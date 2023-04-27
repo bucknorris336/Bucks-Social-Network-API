@@ -92,9 +92,9 @@ module.exports = {
     }
   },
   // Update a User
-  updateThought(req, res) {
+  updateUser(req, res) {
     User.findOneAndUpdate(
-      { _id: req.params.thoughtId },
+      { _id: req.params.userId },
       { $set: req.body },
       { runValidators: true, new: true }
     )
